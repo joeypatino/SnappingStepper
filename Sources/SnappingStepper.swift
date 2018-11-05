@@ -105,7 +105,7 @@ import UIKit
 
      The default value of this property is 100.
      */
-    @IBInspectable public var maximumValue: Double = 100 {
+    @IBInspectable public var maximumValue: Double = .infinity {
         didSet {
             if maximumValue < minimumValue {
                 minimumValue = maximumValue
