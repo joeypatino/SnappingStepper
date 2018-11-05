@@ -6,7 +6,6 @@
 //  Copyright (c) 2015 Yannick Loriot. All rights reserved.
 //
 
-import DynamicColor
 import UIKit
 
 class ViewController: UIViewController {
@@ -26,16 +25,16 @@ class ViewController: UIViewController {
     assignStepperDefaultSettings(tubeStepper)
     tubeStepper.style                = .tube
     tubeStepper.thumbStyle           = .tube
-    tubeStepper.backgroundColor      = UIColor(hex: 0xB2DFDB)
-    tubeStepper.thumbBackgroundColor = UIColor(hex: 0x009688)
+    tubeStepper.backgroundColor      = UIColor(red:0.70, green:0.87, blue:0.86, alpha:1.00)
+    tubeStepper.thumbBackgroundColor = UIColor(red:0.00, green:0.59, blue:0.53, alpha:1.00)
     tubeStepper.hintStyle            = .box
 
     assignStepperDefaultSettings(roundedStepper)
     roundedStepper.style                = .rounded
     roundedStepper.thumbStyle           = .rounded
     roundedStepper.backgroundColor      = .clear
-    roundedStepper.thumbBackgroundColor = UIColor(hex: 0xFFC107)
-    roundedStepper.borderColor          = UIColor(hex: 0xFFC107)
+    roundedStepper.thumbBackgroundColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.00)
+    roundedStepper.borderColor          = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.00)
     roundedStepper.borderWidth          = 0.5
     roundedStepper.hintStyle            = .thumb
 
@@ -43,8 +42,8 @@ class ViewController: UIViewController {
     customStepper.style                = .custom(path: customDoubleArrowPath())
     customStepper.thumbStyle           = .thumb
     customStepper.backgroundColor      = .clear
-    customStepper.borderColor          = UIColor(hex: 0x607D8B)
-    customStepper.thumbBackgroundColor = UIColor(hex: 0x607D8B)
+    customStepper.borderColor          = UIColor(red:0.38, green:0.49, blue:0.55, alpha:1.00)
+    customStepper.thumbBackgroundColor = UIColor(red:0.38, green:0.49, blue:0.55, alpha:1.00)
     customStepper.borderWidth          = 0.5
     customStepper.hintStyle            = .rounded
     
@@ -52,8 +51,8 @@ class ViewController: UIViewController {
     verticalRoundedStepper.style                = .rounded
     verticalRoundedStepper.thumbStyle           = .rounded
     verticalRoundedStepper.backgroundColor      = .clear
-    verticalRoundedStepper.thumbBackgroundColor = UIColor(hex: 0xFFC107)
-    verticalRoundedStepper.borderColor          = UIColor(hex: 0xFFC107)
+    verticalRoundedStepper.thumbBackgroundColor = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.00)
+    verticalRoundedStepper.borderColor          = UIColor(red:1.00, green:0.76, blue:0.03, alpha:1.00)
     verticalRoundedStepper.borderWidth          = 0.5
     verticalRoundedStepper.hintStyle            = .thumb
     verticalRoundedStepper.direction            = .vertical
@@ -62,11 +61,11 @@ class ViewController: UIViewController {
   func assignStepperDefaultSettings(_ snappingStepper: SnappingStepper) {
     snappingStepper.symbolFont           = UIFont(name: "TrebuchetMS-Bold", size: 20)
     snappingStepper.symbolFontColor      = .black
-    snappingStepper.backgroundColor      = UIColor(hex: 0xc0392b)
+    snappingStepper.backgroundColor      = UIColor(red:0.75, green:0.22, blue:0.17, alpha:1.00)
     snappingStepper.thumbWidthRatio      = 0.4
     snappingStepper.thumbText            = nil
     snappingStepper.thumbFont            = UIFont(name: "TrebuchetMS-Bold", size: 18)
-    snappingStepper.thumbBackgroundColor = UIColor(hex: 0xe74c3c)
+    snappingStepper.thumbBackgroundColor = UIColor(red:0.91, green:0.30, blue:0.24, alpha:1.00)
     snappingStepper.thumbTextColor       = .black
 
     snappingStepper.continuous   = true

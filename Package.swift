@@ -27,8 +27,5 @@
 import PackageDescription
 
 let package = Package(
-  name: "SnappingStepper",
-  dependencies: [
-    .Package(url: "https://github.com/yannickl/DynamicColor", majorVersion: 2, minorVersion: 4)
-  ]
+  name: "SnappingStepper"
 )

@@ -13,6 +13,9 @@
 		5B1EFC7F1D71932E0040AD50 /* StyledControlDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EFC7D1D71932E0040AD50 /* StyledControlDirection.swift */; };
 		5B1EFC801D71932E0040AD50 /* StyledControlDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B1EFC7D1D71932E0040AD50 /* StyledControlDirection.swift */; };
 		5E1F7E9CB92461FE26B43DF2 /* Pods_SnappingStepper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 921B58F6F24292F873D6FE4A /* Pods_SnappingStepper.framework */; };
+		8DDD570D2190F9FF007508BF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD570C2190F9FF007508BF /* UIColor.swift */; };
+		8DDD570E2190FDD5007508BF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD570C2190F9FF007508BF /* UIColor.swift */; };
+		8DDD570F2190FDD5007508BF /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDD570C2190F9FF007508BF /* UIColor.swift */; };
 		CE132D681D0880EB00CA6DB5 /* UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132D671D0880EB00CA6DB5 /* UIBuilder.swift */; };
 		CE132D691D0880EB00CA6DB5 /* UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132D671D0880EB00CA6DB5 /* UIBuilder.swift */; };
 		CE132D6A1D08810C00CA6DB5 /* UIBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE132D671D0880EB00CA6DB5 /* UIBuilder.swift */; };
@@ -89,6 +92,7 @@
 		5B1EFC7D1D71932E0040AD50 /* StyledControlDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyledControlDirection.swift; sourceTree = "<group>"; };
 		7C4C30B228B621354D490313 /* Pods-Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tests/Pods-Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8B6D05BEEE35E75A880B7639 /* Pods-SnappingStepperExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappingStepperExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappingStepperExample/Pods-SnappingStepperExample.release.xcconfig"; sourceTree = "<group>"; };
+		8DDD570C2190F9FF007508BF /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		921B58F6F24292F873D6FE4A /* Pods_SnappingStepper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappingStepper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA5888D5090F31444D20DBDA /* Pods-SnappingStepper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappingStepper.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappingStepper/Pods-SnappingStepper.release.xcconfig"; sourceTree = "<group>"; };
 		B096075174A29C2DEC848639 /* Pods-SnappingStepper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappingStepper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappingStepper/Pods-SnappingStepper.debug.xcconfig"; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 				CE972EEB1D044B7E00EDE4A7 /* SnappingStepperBehavior.swift */,
 				CE972EEC1D044B7E00EDE4A7 /* StyledLabel.swift */,
 				CE132D671D0880EB00CA6DB5 /* UIBuilder.swift */,
+				8DDD570C2190F9FF007508BF /* UIColor.swift */,
 				CE972EED1D044B7E00EDE4A7 /* UITouchGestureRecognizer.swift */,
 			);
 			name = Sources;
@@ -290,7 +295,6 @@
 				CE6F72351AF513810019CB55 /* Frameworks */,
 				CE6F72361AF513810019CB55 /* Resources */,
 				CE8FFEC91BAB22C100D43F38 /* Embed Frameworks */,
-				100D5242A835D0DF21B997AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -329,7 +333,6 @@
 				CEB21D5B1B18C169003E9EEC /* Sources */,
 				CEB21D5C1B18C169003E9EEC /* Frameworks */,
 				CEB21D5D1B18C169003E9EEC /* Resources */,
-				57B8D188DD6B7CA8FF787373 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -414,42 +417,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		100D5242A835D0DF21B997AB /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SnappingStepperExample/Pods-SnappingStepperExample-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicColor.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SnappingStepperExample/Pods-SnappingStepperExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		57B8D188DD6B7CA8FF787373 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/DynamicColor/DynamicColor.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicColor.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tests/Pods-Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5A8FDD7C7C23F1CB73E73FAD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -520,6 +487,7 @@
 				CE132D681D0880EB00CA6DB5 /* UIBuilder.swift in Sources */,
 				CE6F723E1AF513810019CB55 /* AppDelegate.swift in Sources */,
 				CE972EFA1D044B7E00EDE4A7 /* UITouchGestureRecognizer.swift in Sources */,
+				8DDD570D2190F9FF007508BF /* UIColor.swift in Sources */,
 				CE972F041D0453D800EDE4A7 /* AutoRepeatHelper.swift in Sources */,
 				CE972EF61D044B7E00EDE4A7 /* SnappingStepperBehavior.swift in Sources */,
 				CE972EF21D044B7E00EDE4A7 /* SnappingStepper+Internal.swift in Sources */,
@@ -537,6 +505,7 @@
 				CE972EF11D044B7E00EDE4A7 /* ShapeStyle.swift in Sources */,
 				CE972EFB1D044B7E00EDE4A7 /* UITouchGestureRecognizer.swift in Sources */,
 				CE132D691D0880EB00CA6DB5 /* UIBuilder.swift in Sources */,
+				8DDD570E2190FDD5007508BF /* UIColor.swift in Sources */,
 				CE972F051D0453D800EDE4A7 /* AutoRepeatHelper.swift in Sources */,
 				CE972EF51D044B7E00EDE4A7 /* SnappingStepper.swift in Sources */,
 				CE972EF71D044B7E00EDE4A7 /* SnappingStepperBehavior.swift in Sources */,
@@ -548,6 +517,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE972F011D044B8200EDE4A7 /* StyledLabel.swift in Sources */,
+				8DDD570F2190FDD5007508BF /* UIColor.swift in Sources */,
 				CE972EFF1D044B8200EDE4A7 /* SnappingStepper.swift in Sources */,
 				CE972EFD1D044B8200EDE4A7 /* ShapeStyle.swift in Sources */,
 				CE972EFC1D044B8200EDE4A7 /* CustomShapeLayer.swift in Sources */,
