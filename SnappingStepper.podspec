@@ -13,5 +13,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
 
   s.framework     = 'UIKit'
-  s.source_files  = 'Sources/*.swift'
+  s.source_files  = 'Sources/SnappingStepper/*.swift'
 end

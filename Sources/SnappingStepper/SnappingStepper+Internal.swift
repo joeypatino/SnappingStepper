@@ -252,7 +252,10 @@ extension SnappingStepper {
 
                 updateValue(value: _value, finished: true)
             }
+            
         case .possible:
+            break
+        default:
             break
         }
     }
