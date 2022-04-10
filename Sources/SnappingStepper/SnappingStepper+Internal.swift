@@ -222,13 +222,16 @@ extension SnappingStepper {
             }
 
             let ratio         = Double(Int(locationRatio * 10)) / 10
-            let factorValue   = round(((maximumValue - minimumValue) / 100) * ratio)
+            let isNegative = abs(ratio) != ratio
+            
+            let r = pow(10, ratio)
+            let addition = ceil(r * 1.0) * (isNegative ? -1.0 : 1.0)
 
             if autorepeat {
-                self.factorValue = factorValue
+                self.factorValue = addition
             }
             else {
-                _value = initialValue + stepValue * factorValue
+                _value = initialValue + stepValue * addition
 
                 updateValue(value: _value, finished: true)
             }
